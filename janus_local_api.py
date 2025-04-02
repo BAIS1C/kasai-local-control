@@ -12,7 +12,9 @@ def call_janus(prompt):
             ["ollama", "run", "deepseek-janus-pro:7b", prompt],
             capture_output=True,
             text=True,
-            timeout=300
+            timeout=300,
+            encoding='utf-8',
+            errors='replace'  # prevents crashes on weird chars
         )
         if result.returncode != 0:
             print("❌ Janus/Ollama error:", result.stderr)
