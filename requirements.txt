@@ -1,0 +1,10 @@
+# requirements.txt
+
+pyflakes==3.2.0
+typer==0.9.0
+watchdog==4.0.0
+
+# Core dependencies for Kasai local control system
+# pyflakes: syntax validation of generated code
+# typer: optional CLI launcher interface (future CLI)
+# watchdog: optional file monitoring (future queue system)

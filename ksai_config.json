@@ -1,0 +1,19 @@
+// kasai_config.json
+{
+  "auto_commit": false,
+  "sandbox_mode": "venv",
+  "execution_check": true,
+  "log_successful_runs": true,
+  "default_git_message": "Kasai manual commit post-review"
+}
+
+/*
+  ┌────────────────────────────┐
+  │        Kasai Config        │
+  └────────────────────────────┘
+  - auto_commit: false → manual approval only (default)
+  - sandbox_mode: 'venv' | 'docker' | 'firejail'
+  - execution_check: validates syntax + test run before commit
+  - log_successful_runs: determines if logs are saved to /logs
+  - default_git_message: used if Kasai auto-commits and no task-based message is found
+*/
